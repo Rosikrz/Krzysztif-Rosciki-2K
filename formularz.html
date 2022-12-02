@@ -1,17 +1,70 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
-
+<html>
 <head>
-	<meta charset="utf-8" http-equiv="Content-Type" CONTENT="text/html; charset=iso-8859-2" />
-	<title>
-    formulasz
-	</title>
+<meta charset="utf-8">
+<title> ZADANIE FORMULARZ </title>
 </head>
-    <body>
-	<button>
-	<a href="index.html">Strona główna</a><br><br>
-	</button>
-	<u> Tutaj będzie formularz </u>
-	</body>
+<body bgcolor="#87CEFA">
+<center><h1> Formularz o dojazdach do sszkoly</h1></center>
+<form enctype="text/plain" action="mailto:mkryniew@wp.pl" subject="formularz_dane" method="Post">
+<TABLE>
+<TR height="100">
+<TD width="500">
+<b>Imię</b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input name="imie" size="22">
+<br><br>
+<b>Nazwisko</b>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+&nbsp &nbsp &nbsp &nbsp <input name="nazwisko" size="22">
+<br><br>
+<b>Klasa </b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input name="klasa" size="22">
+<br><br>
+</TD>
+<TD width="300" >
+<center><font size="5" color="red"><b>Podaj środek lokomacji dojazdu do pracy</b></font></center><br>
+<center> <select>
 
+<option value="autobus">Autobus</option>
+<option value="motocykl">Motocykl</option>
+<option value="prom">Prom</option>
+<option value="samolot">Samolot</option>
+<option value="lodz">Łódź podwodna</option>
+<option value="kajak">Kajak</option>
+</select> </center>
+</TD>
+<TD width="500">Jaka jest Twoja ulubione ciastko?
+<br><br>
+<input type="checkbox" name="ciastko" value="k"> BEZA
+<br><br>
+<input type="checkbox" name="ciastko" value="m"> SERNIK
+<br><br>
+<input type="checkbox" name="ciastko" value="inna"> INNE
+<br><br><br>
+<nobr>Jeśli zaznaczyłeś INNE to podaj swoje ciastko<br>wpisz ciastko poniżej. Maks: 100<br>znaków</nobr>
+<br><br>
+<input name="inna" size="25" maxlength="100">
+</TD>
+</TR>
+<TR height="200">
+<TD><nobr>jestes uczniem ?</nobr>
+<br><br>
+<input type="radio" name="pyt3" value="tak"> technikum
+<br><br>
+<input type="radio" name="pyt3" value="nie"> liceum
+<br><br>
+<input type="radio" name="pyt3" value="tak"> zawodówki
+<TD>podaj czas &nbsp &nbsp &nbsp &nbsp<input type="time"><br>
+podaj datę &nbsp &nbsp &nbsp&nbsp &nbsp<input type="date"> <br>
+wybierz kolor &nbsp &nbsp<input type="color"> <br> </TD>
+<TD> jaka jest wilgotność <input type="range"> <br>
+Proszę czekać...&nbsp &nbsp &nbsp &nbsp <progress>Proszę czekać...</progress> </TD>
+</TR>
+<TR height="100">
+<TD><button onclick="alert('A kuku')" style="height:80px;width:300px">Przycisk niespodzianka</button></TD>
+<TD><nobr><input type="reset" value="Reset" style="height:80px; width:150px"> </TD>
+<TD> <input type="submit" value"=Wyślij formularz" style="height:80px; width:150px"> </TD>
+</TR>
+</TABLE>
+</form>
+</body>
 </html>
